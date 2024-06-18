@@ -6,6 +6,7 @@ body {
     height: 100%;
     font-family: 'Roboto';
 }
+/* header */ 
 .header {
     background-color: #1F2937;
     display: flex;
@@ -17,6 +18,14 @@ body {
     margin-top: 16px;
     font-size: 24px;
 }
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 16px;
+    gap: 8px;
+}
+/* hero */
 .hero {
     background-color: #1F2937;
     padding: 64px;
@@ -24,6 +33,29 @@ body {
     justify-content: space-between;
     align-items: last baseline;
 }
+.heromaintext {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0;
+}
+.herosubtext {
+    color: #6e6e6d;
+}
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+img {
+    flex: 1 1 600px;
+    max-width: 600px;
+    min-width: 0;
+    align-self: center;
+}
+/* information */
 .information {
     padding: 0 64px 64px 64px;
     display: flex;
@@ -31,7 +63,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.infoslab {
+.infocontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +93,7 @@ body {
     font-weight: bolder;
     color: #1F2937;
 }
+/* quote */
 .quote {
     background-color: #E5E7EB; 
     padding: 0 64px 16px 64px;  
@@ -82,6 +115,7 @@ body {
 #signature {
     align-self: flex-end;
 }
+/* call to action */
 .cta {
     padding: 0 64px 0 64px;
     margin: 32px
@@ -94,6 +128,18 @@ body {
     padding: 16px 64px;
     justify-content: space-between;
 }
+.ctablue button {
+    border: 2px solid white;;
+}
+.signup {
+    align-self: center;
+}
+
+.ctatitle {
+    font-size: 24px;
+    font-weight: bolder;
+}
+/* footer */
 .footer {
     background-color: #1F2937;
     flex: 1;
@@ -103,49 +149,11 @@ body {
     padding: 24px;
     color: white;
 }
-ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin-top: 16px;
-    gap: 8px;
-}
-.heromaintext {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-    margin: 0;
-}
-.herosubtext {
-    color: #6e6e6d;
-}
+/* universal */
 button {
     background-color: #3882F6;
     border: none;
     border-radius: 10px;
     padding: 8px 16px;
     color: white;
-}
-.ctablue button {
-    border: 2px solid white;;
-}
-.signup {
-    align-self: center;
-}
-img {
-    flex: 1 1 600px;
-    max-width: 600px;
-    min-width: 0;
-    align-self: center;
-}
-.hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: flex-start;
-}
-.ctatitle {
-    font-size: 24px;
-    font-weight: bolder;
 }
